@@ -17,7 +17,7 @@ function userInput(){
 
 function getWeather(city){
     console.log(city)
-    var geo = `http://api.openweathermap.org/geo/1.0/direct?q=${city},CA,US&appid=${api}`
+    var geo = `http://api.openweathermap.org/geo/1.0/direct?q=${city},OR,US&appid=${api}`
  fetch(geo).then(function (res){
     return res.json()
  }).then(function(data){
