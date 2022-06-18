@@ -8,7 +8,7 @@
     <title>Camp Firecast</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="skeleton normalize" href="./assets/css/normalize.css" />
-    <link rel="skeleton stylesheet" href="./assets/css/skeleton.css">
+    <link rel="skeleton stylesheet" href="./assets/css/skeleton.css" />
 
 </head>
 
@@ -17,10 +17,10 @@
 <body>
     <header>
         <nav>
-            
+
             <ul id="nav-ul">
                 <h1>CampFirecast</h1>
-                
+
                 <li class="navigation">
                     nav1
                 </li>
@@ -32,111 +32,130 @@
         </nav>
     </header>
 
+    <div class="welcome">
+        <h2>Welcome to Camp FireCast</h2>
+            <p>
+                Here at Camp FireCast, we aim to support users in locating a proper camp site that will allow them to have a fire. We want to make sure campers are fire safe and properly equipped with fire safety to ensure the wellbeing of not only other campers but the surrounding areas. Along with keeping the area fire free. To get started, simply type in the city in which you would like to camp and selct the state to coorespond with the city. Based on your search, we will provide data and suggestions to help you be fire conscious. Thank you!
+            </p>
+
+        
+
+    </div>
+
     <main class="search-map">
         <div id="search-div">
-         <div id="wrapper">
-            <input type="text" id="cityName" placeholder="">
-            
-            <form action="">
-               
-                <select id="state">
-                <option>---Select a State---</option>
-                <option>ALABAMA</option>
-                <option>ALASKA</option>
-                <option>ARIZONA</option>
-                <option>ARKANSAS</option>
-                <option>CALIFORNIA</option>
-                <option>COLORADO</option>
-                <option>CONNECTICUT</option>
-                <option>DELAWARE</option>
-                <option>FLORIDA</option>
-                <option>GEORGIA</option>
-                <option>HAWAII</option>
-                <option>IDAHO</option>
-                <option>ILLINIOS</option>
-                <option>INDIANA</option>
-                <option>IOWA</option>
-                <option>KANSAS</option>
-                <option>KENTUCKY</option>
-                <option>LOUISIANA</option>
-                <option>MAINE</option>
-                <option>MARYLAND</option>
-                <option>MASSECHUSSETTS</option>
-                <option>MICHIGAN</option>
-                <option>MINNESOTA</option>
-                <option>MISSISSIPPI</option>
-                <option>MISSOURI</option>
-                <option>MONTANA</option>
-                <option>NEBRASKA</option>
-                <option>NEVADA</option>
-                <option>NEW HAMPSHIRE</option>
-                <option>NEW JERSEY</option>
-                <option>NEW MEXICO</option>
-                <option>NEW YORK</option>
-                <option>NORTH CAROLINA</option>
-                <option>NORTH DAKOTA</option>
-                <option>OHIO</option>
-                <option>OKLAHOMA</option>
-                <option>OREGON</option>
-                <option>PENNSYLVANIA</option>
-                <option>RHODE ISLAND</option>
-                <option>SOUTH CAROLINA</option>
-                <option>SOUTH DAKOTA</option>
-                <option>TENNESSEE</option>
-                <option>TEXAS</option>
-                <option>UTAH</option>
-                <option>VERMONT</option>
-                <option>VIRGINIA</option>
-                <option>WASHINGTON</option>
-                <option>WEST VIRGINIA</option>
-                <option>WISCONSIN</option>
-                <option>WYOMING</option>
-                </select>
+            <div id="wrapper">
+                <input type="text" id="cityName" placeholder="">
 
-            </form>
-            <button id="search" onclick="initMap()"> Search</button>
-        </div id='map'>
-            
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d187604.56957278238!2d-122.79873370321353!3d42.357371841549195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1655563190712!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
+                <form action="">
+
+                    <select id="state">
+                        <option>---Select a State---</option>
+                        <option>ALABAMA</option>
+                        <option>ALASKA</option>
+                        <option>ARIZONA</option>
+                        <option>ARKANSAS</option>
+                        <option>CALIFORNIA</option>
+                        <option>COLORADO</option>
+                        <option>CONNECTICUT</option>
+                        <option>DELAWARE</option>
+                        <option>FLORIDA</option>
+                        <option>GEORGIA</option>
+                        <option>HAWAII</option>
+                        <option>IDAHO</option>
+                        <option>ILLINIOS</option>
+                        <option>INDIANA</option>
+                        <option>IOWA</option>
+                        <option>KANSAS</option>
+                        <option>KENTUCKY</option>
+                        <option>LOUISIANA</option>
+                        <option>MAINE</option>
+                        <option>MARYLAND</option>
+                        <option>MASSECHUSSETTS</option>
+                        <option>MICHIGAN</option>
+                        <option>MINNESOTA</option>
+                        <option>MISSISSIPPI</option>
+                        <option>MISSOURI</option>
+                        <option>MONTANA</option>
+                        <option>NEBRASKA</option>
+                        <option>NEVADA</option>
+                        <option>NEW HAMPSHIRE</option>
+                        <option>NEW JERSEY</option>
+                        <option>NEW MEXICO</option>
+                        <option>NEW YORK</option>
+                        <option>NORTH CAROLINA</option>
+                        <option>NORTH DAKOTA</option>
+                        <option>OHIO</option>
+                        <option>OKLAHOMA</option>
+                        <option>OREGON</option>
+                        <option>PENNSYLVANIA</option>
+                        <option>RHODE ISLAND</option>
+                        <option>SOUTH CAROLINA</option>
+                        <option>SOUTH DAKOTA</option>
+                        <option>TENNESSEE</option>
+                        <option>TEXAS</option>
+                        <option>UTAH</option>
+                        <option>VERMONT</option>
+                        <option>VIRGINIA</option>
+                        <option>WASHINGTON</option>
+                        <option>WEST VIRGINIA</option>
+                        <option>WISCONSIN</option>
+                        <option>WYOMING</option>
+                    </select>
+
+                </form>
+                <button id="search"> Search</button>
+                <!-- <button id="find-me">Show my location</button><br /> -->
+                <p id="status"></p>
+                <a id="map-link" target="_blank"></a>
+                <div id="map">
+                    <iframe width="300" height="300" style="border:0" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU
+                        &q=Space+Needle,Seattle+WA">
+                    </iframe>
+                </div>
+            </div>
         </div>
-
-        <div id="results-div">
-            <!-- create these elements dynamically and add the content using JS -->
-           <!-- <h2>
+            <div id="results-div">
+                <!-- create these elements dynamically and add the content using JS -->
+                <h2> You FireCast report</h2>
                 <p>
-
+                    As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location. 
                 </p>
                 <ul>
-                    <li>
-                        <h3>wind speed</h3>
-                    </li>
-                    <li>
-                        <h3>temp</h3>
-                    </li>
-                    <li>
-                        <h3>humdidty</h3>
-                    </li>
-                    <li>
-                        <h3>dry-fuels</h3>
-                    </li>
-                    <li>
-                        <h3>adverse-weather</h3>
-                    </li>
-                    <p>red flag warning blah blah</p>
+                    <div>
+                        Wind Speed:<span id="wind-speed"></span>
+                    </div>
+                    <div>
+                        High Temperature:<span id="temperature"></span>
+                    </div>
+                    <div>
+                        Humidity:<span id="humidity"></span>
+                    </div>
+                    <div>
+                        Dry Fuels:<span id="dry-fuels"></span>
+                    </div>
+                    <div>
+                        Adverse Weather Conditions:<span id="adverse"></span>
+                    </div>
+                    <p id="red-flag"></p>
                 </ul>
 
-            </h2>
-
-        </div> -->
+            </div>
 
     </main>
 
 
 
     <footer>
-       CampFirecast 2022 &copy;
+        CampFirecast 2022 &copy;
     </footer>
+    <!--     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU&callback=initMap"
+    
+    ></script> -->
+
+
     <script src="./assets/js/script.js"></script>
 </body>
 

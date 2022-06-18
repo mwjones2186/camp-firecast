@@ -29,33 +29,22 @@ function getWeather(city) {
         }).then(function (data) {
             console.log(data)
         })
-    }
-    )
-var lat = data[0].lat
-var lon = data[0].lon
 
-function initMap() {
-var myLatLng =  {lat, lon} 
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: myLatLng
+        
     });
 
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-    });
 
-    // google.maps.event.addListener(marker, 'click', function() {
-    //     alert('Marker clicked')
-    // });
 
-    google.maps.event.addDomListener(searchBtn, "click", function (getWeather) {
-        alert('Map clicked')
-    });
-}
-}
+//     function initMap() {
+//         getWeather.then;
+//         const lat = data[0].lat
+//         const lon = data[0].lon
 
+//         const map = new google.maps.Map(document.getElementById("map"), {
+//           zoom: 0,
+//           center: uluru,
+//         });
+    
+//         window.initMap = initMap;
+};
 searchBtn.addEventListener('click', userInput)
