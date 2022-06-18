@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp Firecast</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="skeleton normalize" href="./assets/css/normalize.css" />
+    <link rel="skeleton stylesheet" href="./assets/css/skeleton.css">
 
 </head>
 
@@ -15,12 +17,15 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li class="sweet-stuffs">
-                    <!--sweet stuffs!-->
+            
+            <ul id="nav-ul">
+                <h1>CampFirecast</h1>
+                
+                <li class="navigation">
+                    nav1
                 </li>
-                <li>
-                    <!--double sweet stuffs!-->
+                <li class="navigation">
+                    nav2
                 </li>
 
             </ul>
@@ -28,16 +33,77 @@
     </header>
 
     <main class="search-map">
-        <div>
-            <input type="text" id="cityName">
-            <!-- <input type="state"> -->
-            <button id="search">Click It! Click it Real GOOOOD</button>
-            <iframe src="" frameborder="0"></iframe>
+        <div id="search-div">
+         <div id="wrapper">
+            <input type="text" id="cityName" placeholder="">
+            
+            <form action="">
+               
+                <select id="state">
+                <option>---Select a State---</option>
+                <option>AL</option>
+                <option>AK</option>
+                <option>AZ</option>
+                <option>AR</option>
+                <option>CA</option>
+                <option>CO</option>
+                <option>CT</option>
+                <option>DE</option>
+                <option>FL</option>
+                <option>GA</option>
+                <option>HI</option>
+                <option>ID</option>
+                <option>IL</option>
+                <option>IN</option>
+                <option>IA</option>
+                <option>KS</option>
+                <option>KY</option>
+                <option>LA</option>
+                <option>ME</option>
+                <option>MD</option>
+                <option>MA</option>
+                <option>MI</option>
+                <option>MN</option>
+                <option>MS</option>
+                <option>MO</option>
+                <option>MT</option>
+                <option>NE</option>
+                <option>NV</option>
+                <option>NH</option>
+                <option>NJ</option>
+                <option>NM</option>
+                <option>NY</option>
+                <option>NC</option>
+                <option>ND</option>
+                <option>OH</option>
+                <option>OK</option>
+                <option>OR</option>
+                <option>PA</option>
+                <option>RI</option>
+                <option>SC</option>
+                <option>SD</option>
+                <option>TN</option>
+                <option>TX</option>
+                <option>UT</option>
+                <option>VT</option>
+                <option>VA</option>
+                <option>WA</option>
+                <option>WV</option>
+                <option>WI</option>
+                <option>WY</option>
+                </select>
+
+            </form>
+
+        </div>
+            <button id="search" onclick="initMap()"> Search</button>
+            <iframe id="map"></iframe>
+         </div>
         </div>
 
-        <div>
-            <!--create these elements dynamically and add the content using JS -->
-             <h2>
+        <div id="results-div">
+            <!-- create these elements dynamically and add the content using JS -->
+           <!-- <h2>
                 <p>
 
                 </p>
@@ -62,14 +128,14 @@
 
             </h2>
 
-        </div>
+        </div> -->
 
     </main>
 
 
 
     <footer>
-        <!--made with blood sweat and lotz of tearz!-->
+       CampFirecast 2022 &copy;
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
