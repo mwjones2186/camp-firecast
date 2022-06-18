@@ -17,15 +17,15 @@ function userInput(){
 
 function getWeather(city){
     console.log(city)
-    var geo = `http://api.openweathermap.org/geo/1.0/direct?q=${city},CA,US&appid=${api}`
- fetch(geo).then(function (res){
-    return res.json()
+    var geo = `http://api.openweathermap.org/geo/1.0/direct?q=${city},OR,US&appid=${api}`
+ fetch(geo).then(function (results){
+    return results.json()
  }).then(function(data){
     // console.log(data)
 
 var forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=alerts,minutely,hourly,current&units=imperial&appid=${api}`
-    fetch(forecast).then(function (res){
-        return res.json()
+    fetch(forecast).then(function (results){
+        return results.json()
      }).then(function(data){
         console.log(data)
      })
@@ -35,3 +35,4 @@ var forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].la
 
 
 searchBtn.addEventListener('click', userInput)
+
