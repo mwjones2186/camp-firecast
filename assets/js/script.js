@@ -17,8 +17,8 @@ function userInput() {
 
 function getWeather(city) {
     console.log(city)
-    var geo = `http://api.openweathermap.org/geo/1.0/direct?q=${city},US,US&appid=${api}`
-    fetch(geo).then(function (results) {
+    var cityApi = `http://api.openweathermap.org/geo/1.0/direct?q=${city},US,US&appid=${api}`
+    fetch(cityApi).then(function (results) {
         return results.json()
     }).then(function (data) {
         // console.log(data)
@@ -28,6 +28,24 @@ function getWeather(city) {
             return results.json()
         }).then(function (data) {
             console.log(data)
+        
+        
+        
+        // if (wind > 25) {
+        //     // alert ("OH NO ITS WINDY");
+        // }else if (wind >15 && wind < 24 ){;
+        //     // alert ("OHH its a little GUSTY!!");
+  
+        // }else {
+        //     // alert ("Ahh this is perfect");
+        // }
+        
+        if (humidity < 15 && wind > 25 ){
+            alert ("YOU GONNA DIE!")
+        }
+
+
+        
         })
 
         

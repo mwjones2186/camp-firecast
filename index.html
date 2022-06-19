@@ -104,6 +104,22 @@
                     </select>
 
                 </form>
+
+                <!-- <form action="">
+                    <select id="date">
+                        <option>---Select a date---</option>
+                        <option id="day-0">Today</option>
+                        <option id="day-1">Tomorrow</option>
+                        <option id="day-2">3 days from now</option>
+                        <option id="day-3">4 days from now</option>
+                        <option id="day-4">5 days from now</option>
+                        <option id="day-5">6 days from now</option>
+                        <option id="day-6">7 days from now</option>
+                    </select>    
+                </form> -->
+
+
+
                 <button id="search"> Search</button>
                 <!-- <button id="find-me">Show my location</button><br /> -->
                 <p id="status"></p>
@@ -118,27 +134,32 @@
         </div>
             <div id="results-div">
                 <!-- create these elements dynamically and add the content using JS -->
-                <h2> You FireCast report</h2>
+                <h2> Your FireCast report for: <span id="location"></span></h2>
                 <p>
                     As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location. 
                 </p>
                 <ul>
                     <div>
-                        Wind Speed:<span id="wind-speed"></span>
+                        Wind Speed: <span id="wind-speed"></span>
                     </div>
                     <div>
-                        High Temperature:<span id="temperature"></span>
+                        High Temperature: <span id="temperature"></span>
                     </div>
                     <div>
-                        Humidity:<span id="humidity"></span>
+                        Humidity: <span id="humidity"></span>
                     </div>
                     <div>
-                        Dry Fuels:<span id="dry-fuels"></span>
+                       UV Index: <span id="uv-index"></span>
                     </div>
                     <div>
-                        Adverse Weather Conditions:<span id="adverse"></span>
+                        Dry Fuels: <span id="dry-fuels"></span>
                     </div>
-                    <p id="red-flag"></p>
+                    <div>
+                        Adverse Weather Conditions: <span id="adverse-weather"></span>
+                    </div>
+                    <div>
+                    <p id="red-flag">There is a reg flag warning in the are in which you are trying to camp. Please advise!</p>
+                    </div>
                 </ul>
 
             </div>
