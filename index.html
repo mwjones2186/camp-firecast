@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="skeleton normalize" href="./assets/css/normalize.css" />
     <link rel="skeleton stylesheet" href="./assets/css/skeleton.css" />
-    <title>Camp Firecast</title>
+    <title>CampFirecast</title>
 </head>
 
 <body>
@@ -18,10 +18,16 @@
                 <h1>CampFirecast</h1>
                 <h2>your campfire forecast</h2>
                 <li class="navigation">
-                    nav1
+                    Home
                 </li>
                 <li class="navigation">
-                    nav2
+                    Safety
+                </li>
+                <li class="navigation">
+                    Tools
+                </li>
+                <li class="navigation">
+                    Resources
                 </li>
             </ul>
         </nav>
@@ -32,42 +38,42 @@
             <div id="wrapper">
                 <input type="text" id="cityName" placeholder="">
                 <!-- <input type="state"> -->
-                <button id="search"> Search
-                </button>
+                <button id="search">Search</button>
                 <iframe src="" frameborder="0"></iframe>
             </div>
         </div>
 
         <div id="results-div">
-            <!-- create these elements dynamically and add the content using JS -->
-              <h2>
-                <p>
-
-                </p>
-                <ul>
-                    <li>
-                        <h3>wind speed</h3>
-                    </li>
-                    <li>
-                        <h3>temp</h3>
-                    </li>
-                    <li>
-                        <h3>humdidty</h3>
-                    </li>
-                    <li>
-                        <h3>dry-fuels</h3>
-                    </li>
-                    <li>
-                        <h3>adverse-weather</h3>
-                    </li>
-                    <p>red flag warning blah blah</p>
-                </ul>
-
-
+            <!-- create these elements dynamically and add the content using JavaScript -->
+            <h2>
+                <!-- add JavaScript content to populate city name, state-->
+                <p>Your Firecast results for [city name, state]:</p>
             </h2>
-
-
-       </div>
+            <ul>
+                <li>
+                    <h4>Wind Speed:</h4>
+                </li>
+                <li>
+                    <h4>Temperature:</h4>
+                </li>
+                <li>
+                    <h4>Humidity:</h4>
+                </li>
+                <!-- unable to determine dry fuels at this time
+                <li>
+                    <h4>Dry Fuels:</h4>
+                </li>
+                -->
+                <li>
+                    <h4>UV Index:</h4>
+                </li>
+                <li>
+                    <h4>Adverse Weather:</h4>
+                </li>
+                <!-- add JavaScript content to indicate if it is safe or not safe to build a campfire -->
+                <p>Based on the location and date you have selected, it is [safe or not safe] for you to build a campfire.</p>
+            </ul>
+        </div>
     </main>
 
     <footer>
