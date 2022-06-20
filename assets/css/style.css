@@ -5,8 +5,14 @@
 }
 
 *{
+<<<<<<< HEAD
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
+=======
+    font-family:'calibri';
+    margin: 0;
+
+>>>>>>> 2b56af4b1ba3acdd14ad4e6d654365fe8437ea0b
 }
 
 
@@ -19,6 +25,7 @@ header{
     
     top: 0;
     background-color: var(--maincolor);
+<<<<<<< HEAD
     height: 10vh;
 
 }
@@ -47,6 +54,36 @@ align-items: flex-end;
 .navigation:hover{
  color: white;
  transform: scale(1.5);
+=======
+    min-height: 15vh;
+
+}
+
+#logo{
+    max-height: 20vw;
+    margin-top: 5px;
+}
+
+nav{
+    margin-left: 2vw;
+    display: flex;
+}
+
+
+h1{
+    color: var(--firecolor);
+    font-size: 5rem;
+    font-family: Amasis MT Pro;
+   
+}
+
+#tagline{
+    color: var(--firecolor);
+    font-family: Amasis MT Light;
+    position:absolute;
+    margin-left: 20vw;
+    font-size: 2rem;
+>>>>>>> 2b56af4b1ba3acdd14ad4e6d654365fe8437ea0b
 }
 
 
