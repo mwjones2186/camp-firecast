@@ -5,14 +5,8 @@
 }
 
 *{
-<<<<<<< HEAD
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
-=======
-    font-family:'calibri';
-    margin: 0;
-
->>>>>>> 2b56af4b1ba3acdd14ad4e6d654365fe8437ea0b
 }
 
 
@@ -22,52 +16,32 @@ body{
 }
 
 header{
-    
-    top: 0;
-    background-color: var(--maincolor);
-<<<<<<< HEAD
-    height: 10vh;
-
-}
-
-
-
-#nav-ul{
     display: flex;
-}
-
-h1{
-    color: var(--firecolor);
-    font-size: 35px;
-   
-}
-
-.navigation{
- color: var(--firecolor);
- list-style: none;
-margin-left: 20vw;
-margin-top: 3vh;
-align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    /* top: 0; */
+    background-color: var(--maincolor);
+    /* min-height: 15vh; */
 
 }
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
 
-.navigation:hover{
- color: white;
- transform: scale(1.5);
-=======
-    min-height: 15vh;
-
+.hide{
+    display: none;;
 }
 
 #logo{
-    max-height: 20vw;
-    margin-top: 5px;
+    max-height: 10vw;
+    /* margin-top: 5px; */
 }
 
-nav{
+/* nav{
     margin-left: 2vw;
     display: flex;
-}
+} */
 
 
 h1{
@@ -83,7 +57,6 @@ h1{
     position:absolute;
     margin-left: 20vw;
     font-size: 2rem;
->>>>>>> 2b56af4b1ba3acdd14ad4e6d654365fe8437ea0b
 }
 
 
@@ -100,6 +73,9 @@ h1{
 
 #results-div{
     min-height: 20vh;
+}
+.map{
+    text-align: center;
 }
 
 #wrapper{
