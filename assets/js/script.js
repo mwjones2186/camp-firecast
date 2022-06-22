@@ -77,9 +77,22 @@ function getWeather(city, state, date) {
             googleMap.setAttribute('src', `https://www.google.com/maps/embed/v1/place?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU
             &q=${formattedCity}+${state}`)
 
-            // }
+            // FireCast report response colors
+            var warningEl = document.getElementById('warning');
+            var textToAddBad = "Based on the location and date you have selected, it is NOT safe for you to build a campfire."
+            var textToAddGood = "Based on the location and date you have selected, it IS SAFE for you to build a campfire."
+            console.log("windspeed and humidity: ", wind.textContent, humidity.textContent);
+            if (parseInt(wind) > 20 && parseInt(humidity) < 7) {
+                warningEl.classList.add("redText");
+                warningEl.innerHTML = textToAddBad;
+            } else {
+                warningEl.innerHTML = textToAddGood;
+                warningEl.classList.add("greenText");
+            };
         })
     })
+
+
 
 
     // if (wind > 25 && humidity <10)
@@ -88,6 +101,7 @@ function getWeather(city, state, date) {
 };
 searchBtn.addEventListener('click', userInput)
 
+<<<<<<< HEAD
 fetch("https://ridb.recreation.gov/api/v1/campsites", {
   headers: {
     Accept: "application/json",
@@ -99,3 +113,6 @@ fetch("https://ridb.recreation.gov/api/v1/campsites", {
     console.log(data)
 })
 
+=======
+// As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location.
+>>>>>>> 1d9fb518134c03fc8931e963786ac2c88b2b5d08
