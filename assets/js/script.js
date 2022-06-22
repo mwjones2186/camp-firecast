@@ -43,8 +43,8 @@ function getWeather(city, state, date) {
             // for (let i = 0; i < data.daily.length ; i++) {
             // console.log(data.daily[i].wind_speed)
             let wind = data.daily[i].wind_speed + ' MPH';
-            let temp = data.daily[i].temp.max;
-            let humidity = data.daily[i].humidity;
+            let temp = data.daily[i].temp.max + ' °F';
+            let humidity = data.daily[i].humidity + ' %';
             let uvi = data.daily[i].uvi;
             let adverseWeather = data.daily[i].weather[0].description;
             // console.log(wind)
@@ -91,6 +91,10 @@ function getWeather(city, state, date) {
                 windEl.classList.add("orangeText");
             }
 
+            if (parseInt(wind) >= 20) {
+                windEl.classList.add("redText");
+            }
+
             // humidity warning text color change
             var humidityEl = document.getElementById("humidity");
 
@@ -98,12 +102,20 @@ function getWeather(city, state, date) {
                 humidityEl.classList.add("orangeText");
             }
 
+            if (parseInt(humidity) <= 10) {
+                humidityEl.classList.add("redText");
+            }
+
             // temperature warning text color change
 
             var temperatureEl = document.getElementById("temperature");
 
-            if (parseInt(temp) >= 85) {
+            if (parseInt(temp) >= 85 && parseInt(temp) < 100) {
                 temperatureEl.classList.add("orangeText");
+            }
+
+            if (parseInt(temp) >= 100) {
+                temperatureEl.classList.add("redText");
             }
         })
     })
