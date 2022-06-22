@@ -41,7 +41,7 @@ function getWeather(city, state, date) {
             var i = date
             // Red Flag weather elements for Firecast report
             // for (let i = 0; i < data.daily.length ; i++) {
-            console.log(data.daily[i].wind_speed)
+            // console.log(data.daily[i].wind_speed)
             let wind = data.daily[i].wind_speed + ' MPH';
             let temp = data.daily[i].temp.max;
             let humidity = data.daily[i].humidity;
@@ -75,7 +75,22 @@ function getWeather(city, state, date) {
     })
 
 
+    // if (wind > 25 && humidity <10)
+    // alert (you gonna die of fire!)
+
 };
 searchBtn.addEventListener('click', userInput)
 
 
+// curl https://ridb.recreation.gov/api/v1/campsites 
+// -H 'accept: application/json' 
+// -H 'apikey: 8b8419a6-9f8b-493a-9397-cf7c589a89d5'
+// //     
+// ?limit=50&offset=0
+//     // var campCite = 'https://ridb.recreation.gov/api/v1/campsites?limit=50&offset=0'
+
+//     fetch(campCite).then(function(results){
+//         return results.json()
+//     }).then(function(data){
+//     console.log(data)
+// })
