@@ -8,6 +8,8 @@ var resultsContainer = document.getElementById('results-div')
 var displayCity = document.getElementById('display-city')
 var googleMap = document.getElementById('map')
 
+
+
 // User input for city name
 function userInput() {
     var city = cityName.value
@@ -25,6 +27,7 @@ function getWeather(city, state, date) {
     fetch(geo).then(function (results) {
         return results.json()
     }).then(function (data) {
+        
         // console.log(data)
         var formattedCity = data[0].name;
         // Weather API retriever 
@@ -38,7 +41,11 @@ function getWeather(city, state, date) {
             // console.log(data)
             displayCity.textContent = formattedCity + ', ' + state;
             resultsContainer.removeAttribute('class')
+            
+            
             var i = date
+            
+            
             // Red Flag weather elements for Firecast report
             // for (let i = 0; i < data.daily.length ; i++) {
             // console.log(data.daily[i].wind_speed)
