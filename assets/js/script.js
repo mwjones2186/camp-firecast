@@ -43,7 +43,7 @@ function getWeather(city, state, date) {
             // for (let i = 0; i < data.daily.length ; i++) {
             // console.log(data.daily[i].wind_speed)
             let wind = data.daily[i].wind_speed + ' MPH';
-            let temp = data.daily[i].temp.max + ' °F';
+            let temp = data.daily[i].temp.max
             let humidity = data.daily[i].humidity + ' %';
             let uvi = data.daily[i].uvi;
             let adverseWeather = data.daily[i].weather[0].description;
@@ -56,7 +56,8 @@ function getWeather(city, state, date) {
             windEl.textContent = wind;
             // Temp:
             var temperatureEl = document.getElementById("temperature");
-            temperatureEl.textContent = temp;
+            //truncated temp
+            temperatureEl.textContent = Math.trunc(parseInt(temp)) + ' °F';
             // Humidity:.max;
             var humidityEl = document.getElementById("humidity");
             humidityEl.textContent = humidity;
