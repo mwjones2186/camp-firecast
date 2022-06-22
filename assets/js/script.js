@@ -88,16 +88,14 @@ function getWeather(city, state, date) {
 };
 searchBtn.addEventListener('click', userInput)
 
+fetch("https://ridb.recreation.gov/api/v1/campsites", {
+  headers: {
+    Accept: "application/json",
+    Apikey: "8b8419a6-9f8b-493a-9397-cf7c589a89d5"
+  }
+}).then(function(results){
+        return results.json()
+    }).then(function(data){
+    console.log(data)
+})
 
-// curl https://ridb.recreation.gov/api/v1/campsites 
-// -H 'accept: application/json' 
-// -H 'apikey: 8b8419a6-9f8b-493a-9397-cf7c589a89d5'
-// //     
-// ?limit=50&offset=0
-//     // var campCite = 'https://ridb.recreation.gov/api/v1/campsites?limit=50&offset=0'
-
-//     fetch(campCite).then(function(results){
-//         return results.json()
-//     }).then(function(data){
-//     console.log(data)
-// })

@@ -19,14 +19,25 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* top: 0; */
+    top: 0; 
     background-color: var(--maincolor);
-    /* min-height: 15vh; */
+    min-height: 15vh; 
 
 }
+
+
 nav ul{
     display: flex;
     justify-content: space-around;
+}
+.navigation{
+    color: var(--firecolor);
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navigation:hover{
+    color: white;
 }
 
 .hide{
@@ -34,14 +45,14 @@ nav ul{
 }
 
 #logo{
-    max-height: 10vw;
-    /* margin-top: 5px; */
+    max-height: 14vh;
+    margin-top: 5px; 
+    float: left;
 }
-
-/* nav{
+nav{
     margin-left: 2vw;
     display: flex;
-} */
+} 
 
 
 h1{
@@ -52,9 +63,9 @@ h1{
 }
 
 #tagline{
-    color: var(--firecolor);
+    color: var(--tancolor);
     font-family: Amasis MT Light;
-    position:absolute;
+    position: absolute;
     margin-left: 20vw;
     font-size: 2rem;
 }
@@ -74,6 +85,17 @@ h1{
 #results-div{
     min-height: 20vh;
 }
+.welcome{
+    text-align: center;
+}
+.welcome h2{
+    margin-top: 5vh;
+}
+.welcome p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .map{
     text-align: center;
 }
@@ -81,6 +103,7 @@ h1{
 #wrapper{
 margin-left: 10vw;
 margin-top: 5vh;
+margin-right: 3vw;
 
 }
 
