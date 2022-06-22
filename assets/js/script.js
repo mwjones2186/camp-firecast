@@ -75,13 +75,36 @@ function getWeather(city, state, date) {
             var textToAddBad = "Based on the location and date you have selected, it is NOT safe for you to build a campfire."
             var textToAddGood = "Based on the location and date you have selected, it IS SAFE for you to build a campfire."
             console.log("windspeed and humidity: ", wind.textContent, humidity.textContent);
-            if (parseInt(wind) > 20 && parseInt(humidity) < 7) {
+            if (parseInt(wind) >= 20 && parseInt(humidity) <= 10) {
                 warningEl.classList.add("redText");
                 warningEl.innerHTML = textToAddBad;
             } else {
                 warningEl.innerHTML = textToAddGood;
                 warningEl.classList.add("greenText");
             };
+
+            // wind speed warning text color change
+
+            var windEl = document.getElementById("wind-speed");
+
+            if (parseInt(wind) < 20 && parseInt(wind) >= 10) {
+                windEl.classList.add("orangeText");
+            }
+
+            // humidity warning text color change
+            var humidityEl = document.getElementById("humidity");
+
+            if (parseInt(humidity) > 10 && parseInt(humidity) <= 20) {
+                humidityEl.classList.add("orangeText");
+            }
+
+            // temperature warning text color change
+
+            var temperatureEl = document.getElementById("temperature");
+
+            if (parseInt(temp) >= 85) {
+                temperatureEl.classList.add("orangeText");
+            }
         })
     })
 
