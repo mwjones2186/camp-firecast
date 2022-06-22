@@ -101,18 +101,4 @@ function getWeather(city, state, date) {
 };
 searchBtn.addEventListener('click', userInput)
 
-<<<<<<< HEAD
-fetch("https://ridb.recreation.gov/api/v1/campsites", {
-  headers: {
-    Accept: "application/json",
-    Apikey: "8b8419a6-9f8b-493a-9397-cf7c589a89d5"
-  }
-}).then(function(results){
-        return results.json()
-    }).then(function(data){
-    console.log(data)
-})
-
-=======
 // As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location.
->>>>>>> 1d9fb518134c03fc8931e963786ac2c88b2b5d08
