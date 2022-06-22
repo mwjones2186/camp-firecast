@@ -13,8 +13,9 @@ AS A responsible camper,
 I WANT to know if the weather conditions are too dry, too hot, or too windy
 SO THAt I can safely build a campfire.
 
+![screenshot](./assets/images/screenshot1.png "Screenshot of completed webpage")
 
-
+![screenshot2](./assets/images/screenshot2.png "screenshot of page section displaying weather results and message")
 
 ## Built With
 * HTML
@@ -32,6 +33,6 @@ https://mwjones2186.github.io/camp-firecast/
 * Ellie (https://github.com/ezaiger)
 * Tim (https://github.com/timtaylor817)
 
-![screenshot](assets/images/camp-firecast.png "Screenshot of completed webpage")
+
 
 ### ©️2022 CampFirecast, Inc
