@@ -68,6 +68,8 @@ function getWeather(city, state, date) {
             var adverseWeatherEl = document.getElementById("adverse");
             adverseWeatherEl.textContent = adverseWeather;
 
+
+
             googleMap.setAttribute('src', `https://www.google.com/maps/embed/v1/place?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU
             &q=${formattedCity}+${state}`)
 
