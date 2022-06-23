@@ -179,6 +179,11 @@ justify-content: center;
 .orangeText {
     color: orange;
 }
+#legal-warning {
+    color: crimson;
+    text-emphasis-style: bold;
+    text-align: center;
+}
 
 /* media queries */
 @media(orientation:landscape){
