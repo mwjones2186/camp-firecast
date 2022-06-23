@@ -158,6 +158,11 @@ justify-content: center;
 .orangeText {
     color: orange;
 }
+#legal-warning {
+    color: crimson;
+    text-emphasis-style: bold;
+    text-align: center;
+}
 
 @media(orientation:landscape){
     .icons{
