@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css stylesheet-->
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <!-- Google Fonts API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hahmlet|Heebo">
     <!--skeleton style sheet-->
     <link rel="skeleton normalize" href="./assets/css/normalize.css" />
     <link rel="skeleton stylesheet" href="./assets/css/skeleton.css" />
@@ -15,102 +17,108 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io (1)/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io (1)/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Camp Firecast</title>
-
+    <title>CampFirecast</title>
 </head>
 
 <body>
+    <!-- header section -->
     <header>
-        <img id="logo" src="assets/images/Campfire.png">
-        <h1>CampFirecast</h1>
-        <p id="tagline"><br><br>Your Campfire Forecast</p>
+        <div id="logo">
+            <img src="assets/images/Campfire.png" alt="campfire logo">
+        </div>
+        <div id="app-name">
+            <h1 id="headline">CampFirecast</h1>
+            <p id="tagline"><br><br>Your Campfire Forecast</p>
+        </div>
         <nav>
-
             <ul id="nav-ul">
-
                 <div id="container">
                     <img class="icons-h" src="./assets/images/tent.png">
                     <img class="icons-h" src="./assets/images/shovel.png">
                     <img class="icons-h" src="./assets/images/plus.png">
                     <img class="icons-h" src="./assets/images/contact-form.png">
                 </div>
-
-
             </ul>
         </nav>
     </header>
 
+    <!-- welcome section -->
     <div class="welcome">
-        <h2>Welcome to CampFirecast</h2>
-        <p>
-            Here at CampFirecast we aim to support users in locating a proper camp site that will allow them to
-            safely build a campfire. We want to make sure campers are fire safe and properly equipped with fire safety to ensure the
-            wellbeing of, not only other campers but the surrounding areas as well. Along with keeping the area fire free. To get
-            started, simply type in the city in which you would like to camp and select the state to correspond with the
-            city. Based on your search, we will provide data and suggestions to help you be fire conscious. Thank you!
-        </p>
-
+        <h2>Welcome to CampFirecast!</h2>
+            <p> 
+            Here at CampFirecast, we aim to support users in determining whether a campfire is safe to light based on
+            location, date selection and weather conditions. We want our campers to be fire conscious to ensure the
+            safety of themselves, fellow campers and the environment.
+            </p>
+            <p>
+            To get started, simply type in the city you would like to camp in and select the corresponding state from
+            the drop-down menu provided. Based on your search, a Firecast report will display and inform you if it is
+            safe or not safe to light a fire. Thank you for choosing CampFirecast and happy camping!
+            </p>
     </div>
 
+    <!-- search map section -->
     <main class="search-map">
         <div id="search-div">
             <div id="wrapper">
-                <input type="text" id="cityName" placeholder="">
 
-                <select id="state">
-                    <option>---Select a State---</option>
-                    <option value="AL">ALABAMA</option>
-                    <option value="AK">ALASKA</option>
-                    <option value="AZ">ARIZONA</option>
-                    <option value="AR">ARKANSAS</option>
-                    <option value="CA">CALIFORNIA</option>
-                    <option value="CO">COLORADO</option>
-                    <option value="CT">CONNECTICUT</option>
-                    <option value="DE">DELAWARE</option>
-                    <option value="FL">FLORIDA</option>
-                    <option value="GA">GEORGIA</option>
-                    <option value="HI">HAWAII</option>
-                    <option value="ID">IDAHO</option>
-                    <option value="IL">ILLINIOS</option>
-                    <option value="IN">INDIANA</option>
-                    <option value="IA">IOWA</option>
-                    <option value="KS">KANSAS</option>
-                    <option value="KY">KENTUCKY</option>
-                    <option value="LA">LOUISIANA</option>
-                    <option value="ME">MAINE</option>
-                    <option value="MD">MARYLAND</option>
-                    <option value="MA">MASSECHUSSETTS</option>
-                    <option value="MI">MICHIGAN</option>
-                    <option value="MN">MINNESOTA</option>
-                    <option value="MS">MISSISSIPPI</option>
-                    <option value="MO">MISSOURI</option>
-                    <option value="MT">MONTANA</option>
-                    <option value="NE">NEBRASKA</option>
-                    <option value="NV">NEVADA</option>
-                    <option value="NH">NEW HAMPSHIRE</option>
-                    <option value="NJ">NEW JERSEY</option>
-                    <option value="NM">NEW MEXICO</option>
-                    <option value="NY">NEW YORK</option>
-                    <option value="NC">NORTH CAROLINA</option>
-                    <option value="ND">NORTH DAKOTA</option>
-                    <option value="OH">OHIO</option>
-                    <option value="OK">OKLAHOMA</option>
-                    <option value="OR">OREGON</option>
-                    <option value="PA">PENNSYLVANIA</option>
-                    <option value="RI">RHODE ISLAND</option>
-                    <option value="SC">SOUTH CAROLINA</option>
-                    <option value="SD">SOUTH DAKOTA</option>
-                    <option value="TN">TENNESSEE</option>
-                    <option value="TX">TEXAS</option>
-                    <option value="UT">UTAH</option>
-                    <option value="VT">VERMONT</option>
-                    <option value="VA">VIRGINIA</option>
-                    <option value="WA">WASHINGTON</option>
-                    <option value="WV">WEST VIRGINIA</option>
-                    <option value="WI">WISCONSIN</option>
-                    <option value="WY">WYOMING</option>
+                <!-- state drop-down information -->
+                <input type="text" id="cityName" placeholder="">
+                    <select id="state">
+                        <option>---Select a State---</option>
+                        <option value="AL">ALABAMA</option>
+                        <option value="AK">ALASKA</option>
+                        <option value="AZ">ARIZONA</option>
+                        <option value="AR">ARKANSAS</option>
+                        <option value="CA">CALIFORNIA</option>
+                        <option value="CO">COLORADO</option>
+                        <option value="CT">CONNECTICUT</option>
+                        <option value="DE">DELAWARE</option>
+                        <option value="FL">FLORIDA</option>
+                        <option value="GA">GEORGIA</option>
+                        <option value="HI">HAWAII</option>
+                        <option value="ID">IDAHO</option>
+                        <option value="IL">ILLINIOS</option>
+                        <option value="IN">INDIANA</option>
+                        <option value="IA">IOWA</option>
+                        <option value="KS">KANSAS</option>
+                        <option value="KY">KENTUCKY</option>
+                        <option value="LA">LOUISIANA</option>
+                        <option value="ME">MAINE</option>
+                        <option value="MD">MARYLAND</option>
+                        <option value="MA">MASSECHUSSETTS</option>
+                        <option value="MI">MICHIGAN</option>
+                        <option value="MN">MINNESOTA</option>
+                        <option value="MS">MISSISSIPPI</option>
+                        <option value="MO">MISSOURI</option>
+                        <option value="MT">MONTANA</option>
+                        <option value="NE">NEBRASKA</option>
+                        <option value="NV">NEVADA</option>
+                        <option value="NH">NEW HAMPSHIRE</option>
+                        <option value="NJ">NEW JERSEY</option>
+                        <option value="NM">NEW MEXICO</option>
+                        <option value="NY">NEW YORK</option>
+                        <option value="NC">NORTH CAROLINA</option>
+                        <option value="ND">NORTH DAKOTA</option>
+                        <option value="OH">OHIO</option>
+                        <option value="OK">OKLAHOMA</option>
+                        <option value="OR">OREGON</option>
+                        <option value="PA">PENNSYLVANIA</option>
+                        <option value="RI">RHODE ISLAND</option>
+                        <option value="SC">SOUTH CAROLINA</option>
+                        <option value="SD">SOUTH DAKOTA</option>
+                        <option value="TN">TENNESSEE</option>
+                        <option value="TX">TEXAS</option>
+                        <option value="UT">UTAH</option>
+                        <option value="VT">VERMONT</option>
+                        <option value="VA">VIRGINIA</option>
+                        <option value="WA">WASHINGTON</option>
+                        <option value="WV">WEST VIRGINIA</option>
+                        <option value="WI">WISCONSIN</option>
+                        <option value="WY">WYOMING</option>
                 </select>
 
+                <!-- date selection section -->
                 <select id="date-select">
                     <option value="0">Today</option>
                     <option value="1">Tomorrow</option>
@@ -119,62 +127,57 @@
                     <option value="4">Day 5</option>
                     <option value="5">Day 6</option>
                     <option value="6">Day 7</option>
-
                 </select>
 
-
-
+                <!-- search button -->
                 <button id="search"> Search</button>
-                <!-- <button id="find-me">Show my location</button><br /> -->
-                <p id="status"></p>
-                <a id="map-link" target="_blank"></a>
-
+                    <p id="status"></p>
+                    <a id="map-link" target="_blank"></a>
             </div>
         </div>
 
+        <!-- firecast report section -->
         <div id="results-div" class="hide">
-            <!-- create these elements dynamically and add the content using JS -->
-            <h2> Your FireCast report for: <span id="display-city"></span></h2>
+            <h2> Your Firecast report for: <span id="display-city"></span></h2>
 
+            <!-- report results section -->
             <p id="warning"></p>
-            <ul>
+                <ul>
+                    <div>
+                        Wind Speed: <span id="wind-speed"></span>
+                    </div>
+                    <div>
+                        High Temperature: <span id="temperature"></span>
+                    </div>
+                    <div>
+                        Humidity: <span id="humidity"></span>
+                    </div>
+                    <div>
+                        UV Index: <span id="uv-index"></span>
+                    </div>
+                    <div>
+                        Adverse Weather Conditions: <span id="adverse"></span>
+                    </div>
+                    <p id="red-flag"></p>
+                </ul>
 
-                <div>
-                    Wind Speed: <span id="wind-speed"></span>
-                </div>
-                <div>
-                    High Temperature: <span id="temperature"></span>
-                </div>
-                <div>
-                    Humidity: <span id="humidity"></span>
-                </div>
-                <div>
-                    UV Index: <span id="uv-index"></span>
-                </div>
-                <div>
-                    Adverse Weather Conditions: <span id="adverse"></span>
-                </div>
-                <p id="red-flag"></p>
-            </ul>
+            <!-- map display -->
             <div class="map">
                 <iframe id="map" width="300" height="300" style="border:0" loading="lazy" allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
 
             </iframe>
             <div>
                 <p id="legal-warning">
-                    THIS APP IS INTEDED FOR FUN PERSONAL USE ONLY. THIS IS NOT INTENDED TO BE USED AS A RULE OR LAW. PLEASE DO NOT USE THIS APP AS PERMISABLE TO HAVE A FIRE WITHOUT CHECKING WITH LOCAL LAWS AND REGULATIONS.
+                    THIS APP IS INTENDED FOR FUN PERSONAL USE ONLY. THIS IS NOT INTENDED TO BE USED AS A RULE OR LAW. PLEASE DO NOT USE THIS APP AS PERMISABLE TO HAVE A FIRE WITHOUT CHECKING WITH LOCAL LAWS AND REGULATIONS.
                 </p>
-    
-    
             </div>
         </div>
- 
-
-    
     </main>
 
+    <!-- footer/mobile nav bar section -->
     <footer>
         <div id="container">
             <img class="icons" src="./assets/images/tent.png">
@@ -184,6 +187,7 @@
         </div>
     </footer>
 
+    <!-- link to JavaScript file -->
     <script src="./assets/js/script.js"></script>
 </body>
 

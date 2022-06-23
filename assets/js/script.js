@@ -27,9 +27,9 @@ function getWeather(city, state, date) {
     }).then(function (data) {
         // console.log(data)
         var formattedCity = data[0].name;
+        
         // Weather API retriever 
         //this is the weather info needs lat (latitude) and lon (longitude)
-        
         var forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=alerts,minutely,hourly,current&units=imperial&appid=${api}`
 
         fetch(forecast).then(function (results) {
@@ -68,8 +68,7 @@ function getWeather(city, state, date) {
             var adverseWeatherEl = document.getElementById("adverse");
             adverseWeatherEl.textContent = adverseWeather;
 
-
-
+            // Google Map
             googleMap.setAttribute('src', `https://www.google.com/maps/embed/v1/place?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU
             &q=${formattedCity}+${state}`)
 
@@ -90,7 +89,6 @@ function getWeather(city, state, date) {
             };
 
             // wind speed warning text color change
-
             var windEl = document.getElementById("wind-speed");
 
             if (parseInt(wind) < 20 && parseInt(wind) >= 10) {
@@ -113,7 +111,6 @@ function getWeather(city, state, date) {
             }
 
             // temperature warning text color change
-
             var temperatureEl = document.getElementById("temperature");
 
             if (parseInt(temp) >= 85 && parseInt(temp) < 100) {
