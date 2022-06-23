@@ -141,6 +141,8 @@ justify-content: center;
 .icons{
     max-width: 7vw;
     margin: 1vw 1vh;
+    border: 1vw 1vm;
+
 }
 
 .icons:hover{

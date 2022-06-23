@@ -29,7 +29,7 @@ function getWeather(city, state, date) {
         var formattedCity = data[0].name;
         // Weather API retriever 
         //this is the weather info needs lat (latitude) and lon (longitude)
-
+        
         var forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=alerts,minutely,hourly,current&units=imperial&appid=${api}`
 
         fetch(forecast).then(function (results) {
@@ -77,7 +77,7 @@ function getWeather(city, state, date) {
             var warningEl = document.getElementById('warning');
             var textToAddBad = "Based on the location and date you have selected, it is NOT safe for you to build a campfire."
             var textToAddGood = "Based on the location and date you have selected, it IS SAFE for you to build a campfire."
-            console.log("windspeed and humidity: ", wind.textContent, humidity.textContent);
+            // console.log("windspeed and humidity: ", wind.textContent, humidity.textContent);
             if (parseInt(wind) >= 20 && parseInt(humidity) <= 10 ||
                 parseInt(wind) >= 20 && parseInt(temp) >= 100 ||
                 parseInt(humidity) <= 10 && parseInt(temp) >= 100 ||
@@ -126,13 +126,10 @@ function getWeather(city, state, date) {
         })
     })
 
-
-
+};
 
     // if (wind > 25 && humidity <10)
     // alert (you gonna die of fire!)
-
-};
 searchBtn.addEventListener('click', userInput)
 
 // As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location.
