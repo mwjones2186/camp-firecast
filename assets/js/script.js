@@ -76,7 +76,10 @@ function getWeather(city, state, date) {
             var textToAddBad = "Based on the location and date you have selected, it is NOT safe for you to build a campfire."
             var textToAddGood = "Based on the location and date you have selected, it IS SAFE for you to build a campfire."
             console.log("windspeed and humidity: ", wind.textContent, humidity.textContent);
-            if (parseInt(wind) >= 20 && parseInt(humidity) <= 10) {
+            if (parseInt(wind) >= 20 && parseInt(humidity) <= 10 ||
+                parseInt(wind) >= 20 && parseInt(temp) >= 100 ||
+                parseInt(humidity) <= 10 && parseInt(temp) >= 100 ||
+                parseInt(wind) >= 20 && parseInt(humidity) <= 10 && parseInt(temp) >= 100) {
                 warningEl.classList.add("redText");
                 warningEl.innerHTML = textToAddBad;
             } else {
