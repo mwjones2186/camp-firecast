@@ -30,7 +30,7 @@ function getWeather(city, state, date) {
         
         // Weather API retriever 
         //this is the weather info needs lat (latitude) and lon (longitude)
-        var forecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=alerts,minutely,hourly,current&units=imperial&appid=${api}`
+        var forecast = `http://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=alerts,minutely,hourly,current&units=imperial&appid=${api}`
 
         fetch(forecast).then(function (results) {
             return results.json()
