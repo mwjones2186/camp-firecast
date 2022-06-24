@@ -7,7 +7,7 @@ var dropDownDate = document.getElementById("date-select")
 var resultsContainer = document.getElementById('results-div')
 var displayCity = document.getElementById('display-city')
 var googleMap = document.getElementById('map')
-
+var toast = document.getElementById('toast');
 // User input for city name
 function userInput() {
     var city = cityName.value
@@ -121,8 +121,15 @@ function getWeather(city, state, date) {
                 temperatureEl.classList.add("redText");
             }
         })
-    }).catch(function (err){
-        alert('Please check your city and state!')
+    }).catch(function (error){
+
+       toast.textContent = 'Please check your city and state';
+
+       toast.setAttribute('class', 'feedback')
+        setTimeout(function(){
+           toast.setAttribute('class', 'feedback hide')
+        }, 2500);
+
     })
 
 
