@@ -120,9 +120,9 @@ function getWeather(city, state, date) {
             if (parseInt(temp) >= 100) {
                 temperatureEl.classList.add("redText");
             }
-        }).catch(function (err){
-            alert(err)
         })
+    }).catch(function (err){
+        alert('Please check your city and state!')
     })
 
 
@@ -132,6 +132,7 @@ function getWeather(city, state, date) {
     // alert (you gonna die of fire!)
 
 };
+
 searchBtn.addEventListener('click', userInput)
 
 // As you can see below, due to the current weather reports and red flag alerts, we would not suggest having a fire in that location. Please search for a new camp site location.
