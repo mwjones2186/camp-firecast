@@ -120,6 +120,8 @@ function getWeather(city, state, date) {
             if (parseInt(temp) >= 100) {
                 temperatureEl.classList.add("redText");
             }
+        }).catch(function (err){
+            alert(err)
         })
     })
 
