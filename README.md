@@ -23,6 +23,7 @@ SO THAT I can safely build a campfire.
 * CSS Framework Source: (getskeleton.com)
 * JavaScript
 * API Sources: (OpenWeatherMap.com, Google.com/maps)
+* Icons from Flaticon.com: Tent (piksart), Shovel (Iconjam), Form (Stockes Design), Plus Sign (kliwir art)
 
 ## Website
 https://mwjones2186.github.io/camp-firecast/
